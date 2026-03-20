@@ -29,7 +29,7 @@ jobs:
       - name: Build exe
         shell: pwsh
         run: |
-          pyinstaller --onefile --windowed -n PicShrink -m picshrink
+          pyinstaller --onefile --windowed -n PicShrink picshrink/__main__.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

@@ -29,7 +29,7 @@ python -m venv .venv
 python -m pip install -U pip
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
-pyinstaller --onefile --windowed -n PicShrink -m picshrink
+pyinstaller --onefile --windowed -n PicShrink picshrink/__main__.py
 ```
 
 产物位于 `dist/PicShrink.exe`。
